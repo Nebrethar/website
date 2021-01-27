@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1>Submit your Event for a CHAOSS Badge</h1><br>
+<input id="collapseIP" type="submit" value="In-Person Event" style="width:49%;float:left;">
+<input id="collapseVI" type="submit" value="Virtual Event" style="width:49%;float:right;">
+<div id="IP">
+    <div id="mdivIP" style="display:none;">
+        <p><br>
+            <br><br>
+            <h2>In-Person Event Badge Submission</h2><br>
+            <label for="pnameIP">Event Name:</label>
+            <input type="text" id="pnameIP" name="pname"><br><br>
+            <label for="linkwebIP">Link to the Event Website:</label>
+            <input type="text" id="linkwebIP" name="linkweb"><br><br>
+            <label for="linkorgIP">Provide verification that you are an event organizer:</label>
+            <input type="text" id="linkorgIP" name="linkorg"><br><br>
+        </p>
+        <h2>Speaker Demographics</h2>
+        <input type="checkbox" id="sdcb">&nbsp;<strong>This event commits to Speaker Diversity & Inclusion.</strong>
+        <a id="sdDrop" class="dropbtn" href="#"><br><br>References</a>
+        <div id="sdReferences" class="dropdown-content" style="display:none">
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/blob/master/focus-areas/events/speaker-demographics.md">CHAOSS Metric Document</a>
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/tree/master/demographic-data">CHAOSS D&I Demographics</a>
+            <br><a href="http://nikkistevens.com/open-demographics/index.html">Open Demographics Initiative</a>
+        </div>
+        <br>
+        <p>  
+            Detail the Process for measuring Speaker Demographics.<br><input type="text" id="sddsc" name="sddsc"><br><br>
+            Provide the link for the page related to Speaker Demographics if available.<br><input type="text" id="sdlink" name="sdlink"><br><br>
+        </p>
+        <p>
+            <i>Criteria</i>:<br>
+            <strong>Measuring demographics</strong> - The Event has a process for measuring speaker demographics.<br>
+            <strong>Displaying demographics</strong> - The Event displays speaker demographics.
+        </p>
+        <h2>Attendee Demographics</h2>
+        <input type="checkbox" id="adcb">&nbsp;&nbsp;<strong>This event commits to Attendee Diversity & Inclusion.</strong>
+        <a id="adDrop" class="dropbtn" href="#"><br><br>References</a>
+        <div id="adReferences" class="dropdown-content" style="display:none">
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/blob/master/focus-areas/events/attendee-demographics.md">CHAOSS Metric Document</a>
+        </div>
+        <br>
+        <p>  
+            Detail the process for measuring Attendee Demographics.<br><input type="text" id="addsc" name="addsc"><br><br>
+            Provide the link for the page related to Attendee Demographics if available.<br><input type="text" id="adlink" name="adlink"><br><br>
+        </p>
+        <p>
+            <i>Criteria</i>:<br>
+            <strong>Measuring Demographics</strong> - The Event has a process for measuring Attendee demographics.<br>
+            <strong>Displaying demographics</strong> - The Event displays attendee demographics.<br>
+            <strong>Attendee Inclusivity</strong> - The Event requests feedback from attendees regarding Diversity & Inclusion.
+        </p>
+        <h2>Code of Conduct at Event</h2>
+        <input type="checkbox" id="coccb">&nbsp;&nbsp;<strong>This event commits to the Code of Conduct at Event.</strong>
+        <a id="ccDrop" class="dropbtn" href="#"><br><br>References</a>
+        <div id="ccReferences" class="dropdown-content" style="display:none">
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/blob/master/focus-areas/events/event-code-of-conduct.md">CHAOSS Metric Document</a>
+            <br><a href="https://www.asaecenter.org/resources/articles/an_plus/2019/october/why-and-how-to-develop-an-event-code-of-conduct">Developing an Event Code of Conduct/a>
+            <br><a href="https://blog.tito.io/posts/code-of-conduct-for-virtual-events/">Code of Conduxt for Virtual Events</a>
+        </div>
+        <br>
+        <p>  
+            Is the code of conduct posted at Event venue?<br><input type="text" id="coclink" name="coclink"><br><br>
+            Provide the link for the Event Code of Conduct.<br><input type="text" id="cocdsc" name="cocdsc"><br><br>
+        </p>
+        <p>
+          <i>Criteria</i>:<br>
+          <strong>Findability</strong> - It is possible to find the Code of Conduct on the Event website.<br>
+          <strong>Clarity</strong> - Event Code of Conduct provides a definition of expected behaviour.<br>
+          <strong>Reporting venue</strong> - The event has a venue for reporting violations of the CoC at the event website.<br>
+          <strong>Support at Event</strong> - The Event Code of Conduct provided information about possible methods to provide support to victims of inappropriate behavior.<br>
+          <strong>Enforcement</strong> - The participants in the Event are required to accept the Code of Conduct.
+        </p>
+        <h2>Diversity Access Tickets</h2>
+        <input type="checkbox" id="dtcb">&nbsp;&nbsp;<strong>This event commits to the Diversity Access Tickets.</strong>
+        <a id="dtDrop" class="dropbtn" href="#"><br><br>References</a>
+        <div id="dtReferences" class="dropdown-content" style="display:none">
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/blob/master/focus-areas/events/diversity-tickets.md">CHAOSS Metric Document</a>
+        </div>
+        <br>
+        <p>  
+            How many different types of diversity access tickets are available for the event?<br><input type="text" id="dt2" name="dt2"><br><br>
+            What are the criteria for qualifying for a diversity access ticket?<br><input type="text" id="dt3" name="dt3"><br><br>
+            Provide a link to the page containing information about Diversity Access Tickets.<br><input type="text" id="dt1" name="dt1"><br><br>
+        </p>
+        <p>
+            <i>Criteria</i>:<br>
+            <strong>Availability</strong> - The event provides one or more Diversity Access Tickets.<br>
+            <strong>Ticket allocation</strong> - The Event has a process for allocating diversity access tickets.<br>
+            <strong>Findability</strong> - The information about Diversity Access Tickets is public.
+        </p>
+        <h2>Family Friendliness</h2>
+        <input type="checkbox" id="ffcb">&nbsp;&nbsp;<strong>This event commits to Family Friendliness.</strong>
+        <a id="ffDrop" class="dropbtn" href="#"><br><br>References</a>
+        <div id="ffReferences" class="dropdown-content" style="display:none">
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/blob/master/focus-areas/events/family-friendly.md">CHAOSS Metric Document</a>
+            <br><a href="https://adacamp.org/adacamp-toolkit/childcare/">Childcare Toolkit</a>
+            <br><a href="https://open.nytimes.com/what-if-child-care-were-as-standard-as-coffee-at-tech-conferences-568c5fba028e?gi=e13ba9882c23">Article on Childcare at Tech Conferences</a>
+        </div>
+        <br>
+        <p>  
+            Does the Event provide childcare facilities for its attendees and speakers?<br><input type="text" id="ff1" name="ff1"><br><br>
+            What are the other ways that a family-friendly environment is being created in the Event?<br><input type="text" id="ff2" name="ff2"><br><br>
+            Provide relevant links related to family friendliness at the Event.<br><input type="text" id="ff3" name="ff3"><br><br>
+        </p>
+        <p>
+            <i>Criteria</i>:<br>
+            <strong>Availability</strong> - The Event provides one or more services/facilities for families.<br>
+            <strong>Findability</strong> - The information about the family friendly services provided at the Event is easy to find on the website.
+        </p>
+        <p>Once you click "submit", you must use your GitHub account to finalize the issue on their Website by clicking "Create New Issue".</p><br>
+        <input id="fsubIP" type="submit" value="Submit"><br>
+    </div>
+</div>
+<div id="VI">
+    <div id="mdivVI" style="display:none;">
+        <p>
+            <br><br>
+            <h2>Virtual Event Badge Submission</h2><br>
+            <label for="pnameVI">Event Name:</label>
+            <input type="text" id="pnameVI" name="pname"><br><br>
+            <label for="linkwebVI">Link to the Event Website:</label>
+            <input type="text" id="linkwebVI" name="linkweb"><br><br>
+            <label for="linkorgVI">Provide verification that you are an event organizer:</label>
+            <input type="text" id="linkorgVI" name="linkorg"><br><br>
+        </p>
+        <h2>Speaker Demographics</h2>
+        <input type="checkbox" id="sdcb">&nbsp;<strong>This event commits to Speaker Diversity & Inclusion.</strong>
+        <a id="sdDrop" class="dropbtn" href="#"><br><br>References</a>
+        <div id="sdReferences" class="dropdown-content" style="display:none">
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/blob/master/focus-areas/events/speaker-demographics.md">CHAOSS Metric Document</a>
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/tree/master/demographic-data">CHAOSS D&I Demographics</a>
+            <br><a href="http://nikkistevens.com/open-demographics/index.html">Open Demographics Initiative</a>
+        </div>
+        <br>
+        <p>  
+            Detail the Process for measuring Speaker Demographics.<br><input type="text" id="sddsc" name="sddsc"><br><br>
+            Provide the link for the page related to Speaker Demographics if available.<br><input type="text" id="sdlink" name="sdlink"><br>
+        </p>
+        <p>
+            <i>Criteria</i>:<br>
+            <strong>Measuring demographics</strong> - The Event has a process for measuring speaker demographics.<br>
+            <strong>Displaying demographics</strong> - The Event displays speaker demographics.
+        </p>
+        <h2>Attendee Demographics</h2>
+        <input type="checkbox" id="adcb">&nbsp;&nbsp;<strong>This event commits to Attendee Diversity & Inclusion.</strong>
+        <a id="adDrop" class="dropbtn" href="#"><br><br>References</a>
+        <div id="adReferences" class="dropdown-content" style="display:none">
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/blob/master/focus-areas/events/attendee-demographics.md">CHAOSS Metric Document</a>
+        </div>
+        <br>
+        <p>  
+            Detail the process for measuring Attendee Demographics.<br><input type="text" id="addsc" name="addsc"><br><br>
+            Provide the link for the page related to Attendee Demographics if available.<br><input type="text" id="adlink" name="adlink"><br><br>
+        </p>
+        <p>
+            <i>Criteria</i>:<br>
+            <strong>Measuring Demographics</strong> - The Event has a process for measuring Attendee demographics.<br>
+            <strong>Displaying demographics</strong> - The Event displays attendee demographics.<br>
+            <strong>Attendee Inclusivity</strong> - The Event requests feedback from attendees regarding Diversity & Inclusion.
+        </p>
+        <h2>Code of Conduct at Event</h2>
+        <input type="checkbox" id="coccb">&nbsp;&nbsp;<strong>This event commits to the Code of Conduct at Event.</strong>
+        <a id="ccDrop" class="dropbtn" href="#"><br><br>References</a>
+        <div id="ccReferences" class="dropdown-content" style="display:none">
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/blob/master/focus-areas/events/event-code-of-conduct.md">CHAOSS Metric Document</a>
+            <br><a href="https://www.asaecenter.org/resources/articles/an_plus/2019/october/why-and-how-to-develop-an-event-code-of-conduct">Developing an Event Code of Conduct/a>
+            <br><a href="https://blog.tito.io/posts/code-of-conduct-for-virtual-events/">Code of Conduxt for Virtual Events</a>
+        </div>
+        <br>
+        <p>  
+            Is the code of conduct posted at Event venue?<br><input type="text" id="coclink" name="coclink"><br><br>
+            Provide the link for the Event Code of Conduct.<br><input type="text" id="cocdsc" name="cocdsc"><br><br>
+        </p>
+        <p>
+            <i>Criteria</i>:<br>
+            <strong>Findability</strong> - It is possible to find the Code of Conduct on the Event website.<br>
+            <strong>Clarity</strong> - Event Code of Conduct provides a definition of expected behaviour.<br>
+            <strong>Reporting venue</strong> - The event has a venue for reporting violations of the CoC at the event website.<br>
+            <strong>Support at Event</strong> - The Event Code of Conduct provided information about possible methods to provide support to victims of inappropriate behavior.<br>
+            <strong>Enforcement</strong> - The participants in the Event are required to accept the Code of Conduct.
+        </p>
+        <h2>Diversity Access Tickets</h2>
+        <input type="checkbox" id="dtcb">&nbsp;&nbsp;<strong>This event commits to the Diversity Access Tickets.</strong>
+        <a id="dtDrop" class="dropbtn" href="#"><br><br>References</a>
+        <div id="dtReferences" class="dropdown-content" style="display:none">
+            <br><a href="https://github.com/chaoss/wg-diversity-inclusion/blob/master/focus-areas/events/diversity-tickets.md">CHAOSS Metric Document</a>
+        </div>
+        <br>
+        <p>  
+            How many different types of diversity access tickets are available for the event?<br><input type="text" id="dt2" name="dt2"><br><br>
+            What are the criteria for qualifying for a diversity access ticket?<br><input type="text" id="dt3" name="dt3"><br><br>
+            Provide a link to the page containing information about Diversity Access Tickets.<br><input type="text" id="dt1" name="dt1"><br><br>
+        </p>
+        <p>
+            <i>Criteria</i>:<br>
+            <strong>Availability</strong> - The event provides one or more Diversity Access Tickets.<br>
+            <strong>Ticket allocation</strong> - The Event has a process for allocating diversity access tickets.<br>
+            <strong>Findability</strong> - The information about Diversity Access Tickets is public.
+        </p>
+        <p>Once you click "submit", you must use your GitHub account to finalize the issue on their Website by clicking "Create New Issue".</p><br>
+        <input id="fsubVI" type="submit" value="Submit"><br>
+    </div>
+</div>
+<div id="templateIP" style="display:none">
+# In-Person Event Submission
+
+## Requirements
+
+- Event Name: {pnameIP}
+- Link to the Event Website: {linkwebIP}
+- Provide verification that you are an event organizer: {linkorgIP}
+
+## Speaker Demographics
+
+- [{sdcb}] This event commits to Speaker Diversity and Inclusion.
+  - `Q` Detail the process for measuring Speaker Demographics.
+  - `A` {sddsc}
+  - `Q` Provide the link for the page related to Speaker Demographics if available.
+  - `A` {sdlink}
+
+## Attendee Demographics
+
+- [{adcb}] This event commits to Attendee Diversity and Inclusion.
+  - `Q` Detail the process for measuring Attendee Demographics.
+  - `A` {addsc}
+  - `Q` Provide the link for the page related to Attendee Demographics if available.
+  - `A` {adlink}
+
+## Code of Conduct at Event
+
+- [{coccb}] This event commits to the Code of Conduct at Event.
+  - `Q` Is the code of conduct posted?
+  - `A` {coclink}
+  - `Q` Provide a link for the Event Code of Conduct.
+  - `A` {cocdsc}
+
+## Diversity Access Tickets
+
+- [{dtcb}] This event commits to the Diversity Access Tickets.
+  - `Q` How many different types of diversity access tickets are available for the event?
+  - `A` {dt2}
+  - `Q` What are the criteria for qualifying for a diversity access ticket?
+  - `A` {dt3}
+  - `Q` Provide a link to the page containing information about Diversity Access Tickets.
+  - `A` {dt1} 
+
+## Family Friendliness
+
+- [{ffcb}] This event commits to Family Friendliness.
+  - `Q` Does the Event provide childcare facilities for its attendees and speakers?
+  - `A` {ff1}
+  - `Q` What are the other ways that a family-friendly environment is being created in the Event?
+  - `A` {ff2}
+  - `Q` Provide relevant links related to family friendliness at the Event.
+  - `A` {ff3}    
+</div>
+<div id="templateVI" style="display:none">
+# Virtual Event Submission
+
+## Requirements
+
+- Event Name: {pnameVI}
+- Link to the Event Website: {linkwebVI}
+- Provide verification that you are an event organizer: {linkorgVI}
+
+## Speaker Demographics
+
+- [{sdcb}] This event commits to Speaker Diversity and Inclusion.
+  - `Q` Detail the process for measuring Speaker Demographics.
+  - `A` {sddsc}
+  - `Q` Provide the link for the page related to Speaker Demographics if available.
+  - `A` {sdlink}
+
+## Attendee Demographics
+
+- [{adcb}] This event commits to Attendee Diversity and Inclusion.
+  - `Q` Detail the process for measuring Attendee Demographics.
+  - `A` {addsc}
+  - `Q` Provide the link for the page related to Attendee Demographics if available.
+  - `A` {adlink}
+
+## Code of Conduct at Event
+
+- [{coccb}] This event commits to the Code of Conduct at Event.
+  - `Q` Is the code of conduct posted?
+  - `A` {coclink}
+  - `Q` Provide a link for the Event Code of Conduct.
+  - `A` {cocdsc}
+
+## Diversity Access Tickets
+
+- [{dtcb}] This event commits to the Diversity Access Tickets.
+  - `Q` How many different types of diversity access tickets are available for the event?
+  - `A` {dt2}
+  - `Q` What are the criteria for qualifying for a diversity access ticket?
+  - `A` {dt3}
+  - `Q` Provide a link to the page containing information about Diversity Access Tickets.
+  - `A` {dt1} 
+    </div>
+<br>
+<script>
+    document.getElementById("collapseIP").addEventListener("click", function(){
+        let divIP = document.getElementById("mdivIP");
+        let divVI = document.getElementById("mdivVI");
+        if (divIP.style.display == "none") { 
+          divIP.style.display = "block";
+        } else {
+          divIP.style.display = "none";
+        }
+        if (divVI.style.display == "block") { 
+          divVI.style.display = "none";
+        }
+    });
+    document.getElementById("collapseVI").addEventListener("click", function(){  
+        let divIP = document.getElementById("mdivIP");
+        let divVI = document.getElementById("mdivVI");  
+        if (divVI.style.display == "none") { 
+          divVI.style.display = "block";
+        } else {
+          divVI.style.display = "none";
+        }
+        if (divIP.style.display == "block") { 
+          divIP.style.display = "none";
+        }
+    });
+    document.getElementById("fsubIP").addEventListener("click", function(){
+      let IP = document.getElementById("templateIP");
+      let div = document.getElementById("mdivIP");
+      let text = IP.innerHTML;
+      let inputs = document.getElementsByTagName('input');
+      let index = 0;
+      for (index = 0; index < inputs.length; ++index) {
+        let cur = inputs[index];
+        if (cur.type == "text") {
+          text = text.replace("{" + cur.id + "}", cur.value)
+        } else if (cur.type == "checkbox") {
+          if (cur.checked == true){
+            text = text.replace("{" + cur.id + "}", "x");
+          } else {
+            text = text.replace("{" + cur.id + "}", " ");
+          }
+        }
+      }
+      const pName = document.getElementById("pnameIP").value
+      const openIssueURL = `https://github.com/badging/event-diversity-and-inclusion/issues/new?title=${encodeURIComponent(`[In-Person Event] ${pName}`)}&body=${encodeURIComponent(text)}`;
+      let loginAndOpenIssueURL = `https://github.com/login?return_to=${encodeURIComponent(openIssueURL)}`;
+      console.log({openIssueURL, loginAndOpenIssueURL, pName, text, });
+      window.location.href = loginAndOpenIssueURL;
+    });
+    document.getElementById("fsubVI").addEventListener("click", function(){
+      let IP = document.getElementById("templateVI");
+      let div = document.getElementById("mdivVI");
+      let text = IP.innerHTML;
+      let inputs = document.getElementsByTagName('input');
+      let index = 0;
+      for (index = 0; index < inputs.length; ++index) {
+        let cur = inputs[index];
+        if (cur.type == "text") {
+          text = text.replace("{" + cur.id + "}", cur.value)
+        } else if (cur.type == "checkbox") {
+          if (cur.checked == true){
+            text = text.replace("{" + cur.id + "}", "x");
+          } else {
+            text = text.replace("{" + cur.id + "}", " ");
+          }
+        }
+      }
+      const pName = document.getElementById("pnameVI").value
+      const openIssueURL = `https://github.com/badging/event-diversity-and-inclusion/issues/new?title=${encodeURIComponent(`[Virtual Event] ${pName}`)}&body=${encodeURIComponent(text)}`;
+      let loginAndOpenIssueURL = `https://github.com/login?return_to=${encodeURIComponent(openIssueURL)}`;
+      console.log({openIssueURL, loginAndOpenIssueURL, pName, text, });
+      window.location.href = loginAndOpenIssueURL;
+    });
+    var dropfunc = function(event) {
+        //console.log(event.target.id)
+        var target = document.getElementById(event.target.id).nextElementSibling
+        //console.log(target.id)
+        if (target.style.display == "block") { 
+          target.style.display = "none";
+        } else {
+          target.style.display = "block";
+        }
+    };
+    var elements = document.getElementsByClassName("dropbtn");
+    console.log(elements);
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('click', dropfunc, false);
+    }
+</script>
+</body>
+</html>
